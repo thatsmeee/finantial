@@ -1,3 +1,55 @@
-<link href="https://api.cryptocloud.plus/static/widget/v2/css/app.css" rel="stylesheet" >
-<vue-widget shop_id="TNqMEDoheEXsNHBV" api_key="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1dWlkIjoiTWpRd016WT0iLCJ0eXBlIjoicHJvamVjdCIsInYiOiI3NWUyMjAwZGQxOTEyMDNmMTI2ZmI0YTc2ZTNjYzM4ZTFjY2VkNTJlYTFkNTcxYTEwMDMzYjdmZmEyMDgxNTZlIiwiZXhwIjo4ODEyMjUyNjY0MX0.FrGn88q2qDkQHut6vTSaGtVsRsaY_ZM1Ffb7QZlPTgM" currency="USD" amount="2" locale="en" ></vue-widget>
-<script src="https://api.cryptocloud.plus/static/widget/v2/js/app.js" ></script >
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 40px;
+        }
+        .pay-button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .pay-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Оплата</h1>
+        <p>Детали платежа:</p>
+        <p>Сумма: 2 USD</p>
+        <button class="pay-button" onclick="handlePayment()">Оплатить</button>
+    </div>
+    <link href="https://api.cryptocloud.plus/static/pay_btn/css/app.css" rel="stylesheet" > 
+    <vue-widget shop_id="TNqMEDoheEXsNHBV" api_key="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1dWlkIjoiTWpRd016WT0iLCJ0eXBlIjoicHJvamVjdCIsInYiOiI3NWUyMjAwZGQxOTEyMDNmMTI2ZmI0YTc2ZTNjYzM4ZTFjY2VkNTJlYTFkNTcxYTEwMDMzYjdmZmEyMDgxNTZlIiwiZXhwIjo4ODEyMjUyNjY0MX0.FrGn88q2qDkQHut6vTSaGtVsRsaY_ZM1Ffb7QZlPTgM" background="#fff" color="#000" border_color="#000" logo="color" width="350px" currency="USD" amount="2" text_btn="Оплатить" ></vue-widget> 
+    <script src="https://api.cryptocloud.plus/static/pay_btn/js/app.js" ></script >
+</body>
+</html>
