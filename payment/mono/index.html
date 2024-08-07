@@ -35,6 +35,8 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
         }
         .pay-button:hover {
             background-color: #218838;
@@ -46,8 +48,7 @@
         <h1>Оплата</h1>
         <p>Детали платежа:</p>
         <p>Сумма: 2 USD</p>
-        <link href="https://send.monobank.ua/jar/522ePpde84" rel="stylesheet" > 
-        <vue-widget background="#fff" color="#000" border_color="#000" logo="color" width="350px" currency="USD" amount="2" text_btn="Оплатить" ></vue-widget> 
+        <a href="https://send.monobank.ua/jar/522ePpde84" class="pay-button">Оплатить</a>
     </div>
 </body>
 </html>
